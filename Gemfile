@@ -15,6 +15,10 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.5.1'
 gem 'simple_form', '~> 3.2'
 gem 'paperclip', '~> 4.3', '>= 4.3.1'
 gem 'masonry-rails', '~> 0.2.4'
+gem 'acts_as_votable', '~> 0.10.0'
+gem 'exifr', '~> 1.2', '>= 1.2.3.1'
+
+
 
 group :doc do
   gem 'sdoc', '~> 0.4.0'
