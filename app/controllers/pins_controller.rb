@@ -24,9 +24,11 @@ class PinsController < ApplicationController
 	end
 
 	def edit
+		@pin = current_user.pins.find(params[:id])
 	end
 
 	def update
+		@pin = current_user.pins.find(params[:id])
 		if @pin.update(pin_params)
 			redirect_to @pin, notice: "Pin was successfully updated"
 		else
@@ -35,6 +37,7 @@ class PinsController < ApplicationController
 	end
 
 	def destroy
+		@pin = current_user.pins.find(params[:id])
 		@pin.destroy
 		redirect_to root_path
 	end
